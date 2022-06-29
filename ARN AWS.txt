@@ -1,0 +1,31 @@
+arn:aws:iam::637935265432:group/group-64
+arn:aws:iam::637935265432:user/user1
+arn:aws:iam::637935265432:user/shubham
+arn:aws:iam::637935265432:policy/user_7812
+
+
+arn:aws:ec2:ap-south-1:637935265432:xxxxxx
+
+arn:partition:service:region:account-id:resource-type/resource-id
+
+partiton -- aws --- global
+	 -- aws-cn  -- china
+	 -- aws-us-gov  -- us government
+
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListUsers",
+                "iam:ListGroups",
+                "iam:CreateUser"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
